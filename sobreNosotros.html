@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .header img {
+        width: 100%;
+        height: 700px;
+        position: relative;
+      }
+      .contacto {
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        font-size: 50px;
+        color: white;
+      }
+      .formulario {
+        position: absolute;
+        top: 35%;
+        left: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="header">
+      <img src="img/contacto.jpeg" />
+      <p class="contacto">Contacta con nosotros</p>
+
+      <form class="formulario">
+        <center><h3>Opinión del Cliente</h3></center>
+
+        <div class="contenidoform">
+          <label for="nombre">Ingrese su nombre completo</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+            aria-label="Nombre"
+          />
+          <br />
+          <br />
+
+          <label for="correo">Ingrese su correo electronico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            aria-label="Email"
+          />
+          <br />
+
+          <p>
+            <br />
+            Modelo:
+
+            <select name="Modelo">
+              <option>RS e-trong GT</option>
+              <option>RS 3 Sedan</option>
+              <option>RS 4 Avant</option>
+              <option>RS 5 Coupé</option>
+              <option>RS 5 Sportback</option>
+              <option>RS 6 Avant</option>
+              <option>RS 7 Sportback</option>
+              <option>RS Q3 Sportback</option>
+              <option>RS Q8</option>
+            </select>
+            <br />
+            <br />
+            Opinión detallada: <br />
+            <textarea
+              name="comentario"
+              placeholder="Ajusta la ventana a tu gusto"
+            ></textarea>
+            <br />
+            <br />
+            <input type="submit" value="Enviar reseña" />
+          </p>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
